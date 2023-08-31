@@ -53,3 +53,21 @@ select * from book
         
 select * from book
         where publisher <> '굿스포츠' and publisher<>'해냄' and publisher<>'운진지식하우스';
+        
+select * from book
+        where bookname='축구의 역사';
+        
+select * from book
+        where bookname like '축구의 역사';
+        
+select * from book
+        where bookname like '%축구%';
+        
+select * from book
+        where bookname like '%과학%';
+        
+select * from book
+        where bookname like '%과학';
+        
+select * from book
+        where bookname like '___의%';
