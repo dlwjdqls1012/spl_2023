@@ -1,0 +1,14 @@
+-- insertcustomer 프로시저를 작성하시오
+create or replace PROCEDURE INSERTCUSTOMER (
+    myCustId in number,
+    myName in varchar2,
+    myAddress in varchar2,
+    myPhone in varchar2)
+AS 
+BEGIN
+  insert into customer(custid, name, address, phone)
+  values(myCustId, myName, myAddress, myPhone);
+END INSERTCUSTOMER;
+
+--실행할 때 블럭설정
+exec insertcustomer(6,'이수미','서울시 용산구 이태원', '010-1324-3425');
